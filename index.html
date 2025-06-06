@@ -72,7 +72,7 @@
       font-size: 8vw; /* Адаптивный размер шрифта */
       font-weight: 400;
       font-style: normal;
-      color: rgb(170, 139, 55);
+      color: rgb(54, 53, 53);
     }
 
     .hero h3 {
@@ -99,7 +99,7 @@
 
     .calendar {
       background: url('images/B9E473BF-CAB2-4DBE-975F-6363936DD8A7.JPEG') no-repeat center center;
-  background-size: cover; /* Чтобы изображение занимало всю секцию */
+  background-size: contain; /* Чтобы изображение занимало всю секцию */
   padding: 216px; /* ИЗМЕНЕНО: Убрал горизонтальные отступы (150px) */
   text-align: center;
     }
@@ -107,8 +107,8 @@
     .countdown {
       display: flex;
       justify-content: center;
-      gap: 5vw; /* Адаптивный отступ между элементами */
-      padding: 30px 20px; /* Отступы */
+      gap: 4vw; /* Адаптивный отступ между элементами */
+      padding: 20px 15px; /* Отступы */
       border-radius: 30px;
       box-shadow: 0 6px 20px rgba(255, 255, 255, 100);
       flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
@@ -118,7 +118,7 @@
       color: #fff;
       text-align: center;
       flex-basis: 20%; /* Дает каждому элементу 20% ширины, чтобы 4 помещались в ряд */
-      min-width: 80px; /* Минимальная ширина для каждого блока */
+      min-width: 50px; /* Минимальная ширина для каждого блока */
     }
 
     .time-box .number {
@@ -253,7 +253,7 @@
       animation: heartMove 1.5s infinite ease-in-out;
       margin-left: 80vw; /* Адаптивный отступ, можно поиграться */
       position: relative; /* Добавь это */
-  top: 267px;       /* И это значение, чтобы опустить его */
+  top: 245px;       /* И это значение, чтобы опустить его */
     }
 
     @keyframes heartMove {
@@ -432,7 +432,7 @@
 
     <h3>Тойға қатысуыңызды растауыңызды сұраймыз!</h3>
     <div class="spacer" style="height: 30px;"></div>
-    <p>АТЫ ЖӨНІҢІЗДІ (ЖҰБАЙЫҢЫЗБЕН <br> КЕЛЕТІН БОЛСАҢЫЗ, ЕКЕУІҢІЗДІҢ ДЕ <br> АТЫҢЫЗДЫ ЖАЗЫҢЫЗ)</p>
+    <p style="font-size: 18px;">АТЫ ЖӨНІҢІЗДІ (ЖҰБАЙЫҢЫЗБЕН <br> КЕЛЕТІН БОЛСАҢЫЗ, ЕКЕУІҢІЗДІҢ ДЕ <br> АТЫҢЫЗДЫ ЖАЗЫҢЫЗ)</p>
     <div class="spacer" style="height: 30px;"></div>
 
     <form action="https://formspree.io/f/mpwrwrnk" method="POST" class="rsvp-form">
@@ -440,7 +440,7 @@
       <div class="spacer" style="height: 20px;"></div>
 
       <div class="radio-group">
-        <p>Жұбаңызбен келсеңіз, есімін жазыңыз.</p>
+        <p>Жұбайыңызбен <br> келсеңіз, есімін жазыңыз.</p>
         <div class="spacer" style="height: 10px;"></div>
         <label><input type="radio" name="attendance" value="Иә" required> Иә, қатысамын</label>
         <label><input type="radio" name="attendance" value="Жоқ"> Жоқ, келе алмаймын</label>
